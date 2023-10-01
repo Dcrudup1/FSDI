@@ -2,60 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/mystyle.css">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mstyle.css">
 </head>
 <body>
-    <header>
-        <div class="flex-container">
-        
-            <a href="index.html"><h1>Coffee Blog</h1>
-        <nav><style>
-            nav{
-                word-spacing: 20px;
-            }
-            </style>
-                    <a href="about.html">About</a>
-                    <a href="courses.html">Courses</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
+    <header class="site-header">
+        <h1>RealEstate</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h2  class="legend-container-contact">Contact</h2>
+        <h3>Fill the next information</h3>
+        <fieldset>
+            <legend style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" ><b>Personal Information</b></legend>
+            <div class="form-container">
+                <labe><b>Name:<b></label>
+                <input type="text">
             </div>
-            <h1>coffee Blog with tips and courses</h1>
-            <p>Learn from the experts with the best recipes and tips</p>
-            </header>
-            <main class="container">
-                <h2>Contact</h2>
-            
-                <div>
-                    <div class="contact-container">
-                    <div class="input-container">
-                        <img src="./img/contact.jpg" alt="">
-                    </div>
-                <div>
-
-                    <div class="form-container">
-                    
-                        <div class="input-container">
-                        <label>Name:</label>
-                        <input type="email" placeholder="Add your name">
-                </div>
-                <div class="input-container">
-                    <label>Email:</label>
-                    <input type="text" placeholder="Add your email">
-                </div>
-                <div class="input-container">
-                    <label>Message:</label>
-                    <textarea cols="20" rows="2" placeholder="Add your message"></textarea>
-                </div>
-                <div>
-                    <a class="btn btn-more2" href="#">sent</a>
-                </div>
-            
-            </main>
-            
+            <div class="form-container">
+                <label>Email:</label>
+                <input type="text">
+            </div>
+            <div class="form-container">
+                <label>Phone Number:</label>
+                <input type="text">
+            </div>
+            <div  class="form-container">
+                <label>Message:</label>
+                <textarea style= "margin-left: 2px; background-color: rgb(202, 201, 201);" cols="117.12" rows="20.11" placeholder="Add your message"></textarea>
+            </div>
+        </fieldset>
+    </main>
+    <section class="container">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="moe-info">
+                <label class="label-info">Type</label>
+                <select class="class-info" id="">
+                <option value="">----Select an option----</option>
+                <option value="">Luxury House On The Lake</option>
+                <option value="">Luxury House</option>
+                <option value="">House With Pool</option>
+            </select>
+            </div>
+            <div class="form-container">
+                <label for="">Number</label>
+                <input type="text">
+            </div>
+        </fieldset>
+    </section>
+    <section class="container">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="">Phone</label>
+            <input class="label-container" type="checkbox" name="" id="">
+            <label for="">Email</label>
+            <input class="label-container" type="checkbox" name="" id="">
+        </div>
+        <div class=""> 
+            <p>If you want ti be contacted by phone, please selecta day and hour</p>
+        </div>
+        <div class="class-info">
+        <label for="">Date & Time</label>
+        <input type="datetime-local" name="" id="">
+    </div>
+    </fieldset>
+    </section>
+    <button class="btn-contact"> send</button>
 </body>
 </html>
